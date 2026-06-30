@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-between">
+                <button onclick="openMenu()" class="header-menu-mobile"> <!-- fonction pour le menu hamburger -->
+                    <span class="material-icons">menu</span>
+                </button>
+                <a href="/" class="header-logo">
+                    <img src="img/logo_HTML.png">
+                </a>
+                <!-- Section menu -->
+                <ul class="header-menu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/">A propos</a></li>
+                    <li><a href="/">Compétences</a></li>
+                    <li><a href="/">Projets</a></li>
+                    <li><a href="/">Contacts</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <!-- Section Slider -->
+    <div class="slider">
+      <img src="img/fond portfolio.png" class="slider-background">     
+    
+        <div class="slider-content">
+        <h1>Elodie Pushpanathan</h1>
+        <p>Voici mon portfolio étudiant</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="boxed">
+            <div class="flex toColumn mCenter"> <!-- toColumn et mCenter pour rendre le texte responsive -->
+                <div class="w40 wm100">
+                    <h2>à propos</h2>
+                </div>
+                <div class="w60"><!-- width 60% -->
+                    <p>Actuellement en Master CMW, je développe une double compétence entre conception digitale 
+                        et communication. Curieuse et rigoureuse, je m'intéresse autant à la technique qu'à la manière de raconter
+                         et de valoriser un projet auprès de son public.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- J'ai voulu séparer les différentes sections en les différenciant par couleur -->
+    <div class="section dark">
+        <div class="boxed text-center">
+            <h2>Mes compétences</h2>
+            <div class="flex toColumn gap20"><!-- toColumn pour la version responsive et avec un espacement de 20px -->
+                <div class="w25 wm100 skill"><!-- width comp : 25%, mobile : 100% -->
+                    <img src="img/logo_HTML.png">
+                    <h3>HTML</h3>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="img/logo-CSS.png">
+                    <h3>CSS</h3>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="img/logo-Javascript.png">
+                    <h3>Javascript</h3>
+                </div>
+                <div class="w25 wm100 skill">
+                    <img src="img/illustrator.png">
+                    <h3>Illustrator</h3>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="section">
+        <div class="boxed text-center"> 
+             <h2>Mes projets</h2>
+             <div class="flex wrap gap20 space-between"><!-- espacement entre les projets et aligment sur la section -->
+                <div class="w32 wm50 projet">
+                    <a href="https://www.linkedin.com/school/masterculturesetmetiersduweb/posts/?feedView=all" target="_blank">
+                        <img src="img/Cellule com.png">
+                        <h3>Cellule Com' du master CMW</h3>
+                    </a>
+                </div>
+            <div class="w32 wm50 projet">
+                    <a href="https://www.figma.com/proto/hQAaoWJAOXlsefVN1DcZnG/Untitled?node-id=0-1" target="_blank">
+                        <img src="img/Création de logo.png">
+                        <h3>Création de logo</h3>
+                    </a>
+                </div>
+            <div class="w32 wm50 projet">
+                    <a href="https://noli.mastercmw.com/home" target="_blank">
+                        <img src="img/documentaire.png">
+                        <h3>Documentaire interactif</h3>
+                    </a>
+                </div>
+              </div>
+            <div class="w32 wm50 projet">
+                    <a href="/">
+                        <video width="375" height="350" controls>
+                        <source src="img/Video workshop.mp4" type="video/mp4">
+                        </video>
+                        <h3>Présentation Master</h3>
+                    </a>
+                </div>
+             </div>
+        </div>
+     </div>    
+
+    <div class="section dark">
+        <div class="boxed text-center">
+            <h2>Mes contacts</h2>
+            <div class="flex toColumn space-between mgap20">
+                <div class="w32 wm100 contact">
+                 <span class="material-icons icon">phone</span><!-- icones amenés par google fonts -->
+                 <span class="label">téléphone</span>  
+                 <span class="value">06.95.69.82.51</span>
+                </div>
+                <div class="w32 wm100 contact">
+                 <span class="material-icons icon">mail</span>
+                 <span class="label">E-mail</span>  
+                 <span class="value">elodiepushpanathan@gmail.com</span>
+                </div>
+                <div class="w32 wm100 contact">
+                 <span class="material-icons icon">web</span>
+                 <span class="label">LinkedIn</span>  
+                 <span class="value">www.linkedin.com/in/elodie-pushpanathan-488322255</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+<script src="script.js"></script>
+
+</html>
